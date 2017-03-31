@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe "login/index.html.haml", :type => :view do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "should render login page" do
+    render
+    expect(response).to render_template("login/index")
+  end
 end
