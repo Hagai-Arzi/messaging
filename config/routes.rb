@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  post 'sessions/create'
+
   # root to: "dashboard#index"
   get 'login/index'
   get 'login' => 'login#index'
 
-  resources 'sessions'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
