@@ -1,0 +1,14 @@
+#login
+  = form_tag sessions_path, :method => :post do
+    #input
+      %input{ placeholder: "User name"}
+      %select
+        %option{value: "strict"}
+          Strict
+        %option{value: "yoda"}
+          Yoda
+        %option{value: "valley_girl"}
+          Valley Girl
+        %option{value: "binary_code"}
+          Binary Code
+      %input{ type: :submit, class: :submit }
